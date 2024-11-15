@@ -1,0 +1,99 @@
+@media (max-width: 1300px) {
+  * {
+    font-size: 0.95rem;
+  }
+  /* Navbar (đổi class thành navbar1 để tránh bị trùng class với bootstrap) */
+  .nav-portrait-pic {
+    display: none;
+    height: auto;
+  }
+  .nav-certificate {
+    margin-left: 15px;
+  }
+  .nav-background {
+    margin-right: 15px;
+  }
+  .navbar1 {
+    height: 75px;
+  }
+
+  /* Basic information */
+  .target-content h2 {
+    margin: 50px 35px 50px 35px;
+    text-align: center;
+  }
+  .target-content p {
+    margin: 0 100px 50px 100px;
+  }
+  .personal-info h2 {
+    margin: 50px 35px 50px 35px;
+  }
+  .personal-info-content {
+    margin-left: 50px;
+  }
+  .social-media-links i {
+    font-size: 1.5em;
+  }
+  /* Background */
+  .background-container {
+    margin: 30px 100px 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    color: #747474;
+  }
+  /* Certificate */
+  .certificate-container {
+    padding-bottom: 30px;
+  }
+  .certificate-content {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .certificate-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 100px;
+  }
+  .certificate-ielts img {
+    /* width: 150px;
+    height: 75px; */
+    margin-bottom: 10px;
+  }
+  .certificate-ielts-text {
+    display: block;
+    margin: 0;
+    padding-bottom: 75px;
+  }
+  .certificate-ielts-text h4 {
+    margin: 0;
+  }
+
+  .certificate-ioe img {
+    /* width: 75px;
+    height: 100px; */
+    margin-bottom: 10px;
+  }
+  .certificate-ioe-text {
+    display: block;
+    margin: 0;
+  }
+  .certificate-ioe-text h4 {
+    margin: 0;
+  }
+  /* Project */
+  .project-list {
+    grid-template-columns: repeat(3, 230px);
+    justify-content: center;
+  }
+  .project-minecraft-server img {
+    height: 200px;
+  }
+  .project-personal-cv img {
+    height: 200px;
+  }
+  .project-container {
+    margin: 0px 100px 0px 100px;
+  }
+  /* Footer */
+}

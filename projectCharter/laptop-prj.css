@@ -1,0 +1,130 @@
+body {
+  background-color: blue;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+h2 {
+  color: blue;
+  margin: 20px 20px 0 20px;
+  padding-bottom: 25px;
+  border-bottom: 1px grey solid;
+}
+* i {
+  font-size: 200%;
+  margin: 0px 30px 0px 30px;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.goals,
+.scopes,
+.team,
+.primary,
+.timeline {
+  background-color: #f0f8ff;
+  display: inline-block;
+}
+.timeline {
+  grid-column: 4;
+  grid-row: 1 / span 2;
+}
+.goals {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+.scopes {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+/* Goal */
+.goals i {
+  font-size: 200%;
+  margin: 0px 30px 0px 30px;
+}
+.goal {
+  margin: 10px 25px 10px 25px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  justify-content: center;
+  align-items: center;
+  border-bottom: rgb(194, 194, 194) 1px solid;
+}
+.goal p {
+  padding-bottom: 10px;
+}
+
+/* Team */
+.team i {
+  font-size: 200%;
+  margin: 0;
+}
+.member {
+  display: grid;
+  margin: 10px 25px 10px 25px;
+  grid-template-columns: 1fr 10fr;
+  justify-content: center;
+  align-items: center;
+}
+/* Scopes */
+.scope-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 25px 0px 25px;
+  gap: 10px;
+}
+/* Primary */
+.primary-container i {
+  margin: 0;
+}
+.primary-container p {
+  display: inline-block;
+  margin: 0;
+  font-size: 1em;
+}
+.primary-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 25px 25px 25px;
+  gap: 10px;
+}
+.primary-content {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+}
+/* Timeline */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  gap: 10px;
+}
+.timeline-icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #9e88ff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: 3px gray solid;
+}
+.timeline-icon h3 {
+  margin: 0;
+  color: white;
+}
+.timeline-content {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px rgb(0, 179, 179) dashed;
+  gap: 15px;
+}
+.timeline-content p {
+  margin: 0;
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+
+    <title>Assignment03</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="cv-container">
+      <!-- Banner -->
+      <div class="banner-container">
+        <div class="img-bg">
+          <img
+            src="images/banner.jpg"
+            alt="Banner image"
+            class="banner-img"
+            height="1200"
+            width="460"
+          />
+        </div>
+        <div class="centered">
+          <h2 class="name">Nguyễn Hữu Đăng Khôi</h2>
+          <h4 class="job">Học sinh</h4>
+        </div>
+        <div class="bottom-left"></div>
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-right"></div>
+      </div>
+      <!-- Navbar (đổi class thành navbar1 để tránh trùng class với Bootstrap) -->
+      <nav class="navbar1">
+        <div class="nav-info">
+          <div class="nav-info-content">
+            <i class="icon icon-user"></i>
+            <a href="#basic-info">Thông tin</a>
+          </div>
+        </div>
+        <div class="nav-background">
+          <div class="nav-background-content">
+            <i class="icon icon-doc-text-inv"></i>
+            <a href="#background">Lý lịch</a>
+          </div>
+        </div>
+        <div class="nav-portrait-pic">
+          <div class="nav-picture">
+            <img
+              src="images/unnamed.jpg"
+              alt="Portrait"
+              width="150px"
+              height="150px"
+              style="border-radius: 50%"
+            />
+          </div>
+        </div>
+        <div class="nav-certificate">
+          <div class="nav-certificate-content">
+            <i class="icon icon-mail-alt"></i>
+            <a href="#certificate">Chứng chỉ</a>
+          </div>
+        </div>
+        <div class="nav-project">
+          <div class="nav-project-content">
+            <i class="icon icon-star-1"></i>
+            <a href="#project">Dự án</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Basic information -->
+      <div class="basic-info-container row" id="basic-info">
+        <div class="target col-lg">
+          <div class="target-content">
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <p>
+              Hiện tại em đang là một học sinh học tại trường THPT Bến Cát, em
+              là một người từ nhỏ đã có đam mê công nghệ và quyết định sau này
+              sẽ tiếp tục theo con đường công nghệ thông tin. Bản thân em cũng
+              sẽ cố gắng để học tập thêm để mở rộng vốn hiểu biết và trở thành
+              một người có ích.
+            </p>
+          </div>
+        </div>
+        <div class="personal-info col-lg">
+          <h2>Thông tin cá nhân</h2>
+          <div class="personal-info-content">
+            <div class="gender">
+              <p>Giới tính :</p>
+              <p style="color: #929298">Nam</p>
+            </div>
+            <div class="birthdate">
+              <p>Ngày sinh :</p>
+              <p style="color: #929298">20/04/2009</p>
+            </div>
+            <div class="phone">
+              <p>Điện thoại :</p>
+              <p style="color: #929298">(+84) 964955187</p>
+            </div>
+            <div class="email">
+              <p>Email :</p>
+              <p style="color: #929298">nguyenkhoi20042009@gmail.com</p>
+            </div>
+            <div class="address">
+              <p>Địa chỉ :</p>
+              <p style="color: #929298">Bình Dương, Việt Nam</p>
+            </div>
+            <div class="social-media-links">
+              <a
+                href="https://github.com/ngyykhoi"
+                class="github-link"
+                target="_blank"
+                ><i class="icon-github-circled"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100087268943494"
+                class="facebook-link"
+                target="_blank"
+                ><i class="icon-facebook-circled"></i
+              ></a>
+            </div>
+          </div>
+          <div class="email-check">
+            <form id="email-form">
+              <input
+                type="email"
+                name="Email"
+                class="email-input"
+                required
+                style="margin-bottom: 10px"
+                placeholder="Enter email"
+                size="60"
+                height="30"
+              />
+            </form>
+            <h6 style="color: #929298">Hãy nhập email để xác thực</h6>
+            <button
+              type="button"
+              class="email-check-button"
+              form="email-form"
+              value="Submit"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Background -->
+      <div class="background-container" id="background">
+        <div class="bg-box bg-experience bg-0">
+          <div class="bg-content">
+            <h3>Kinh nghiệm</h3>
+            <i class="ic-toolbox" id="background-toolbox"></i>
+            <ul class="vm-content-0">
+              <li>
+                <h4 style="color: #686868">Trường THPT Bến Cát</h4>
+                <p class="exp-date">08/2024 -</p>
+                <p class="exp-current">Hiện tại</p>
+                <p>- Học sinh</p>
+                <p>- Chưa có kinh nghiệm</p>
+              </li>
+            </ul>
+            <!-- View more -->
+            <button type="button" class="view-more bg-exp-vm">
+              <i class="icon-down-dir"></i>
+              <p style="display: inline">VIEW MORE</p>
+            </button>
+          </div>
+        </div>
+        <div class="bg-box bg-education bg-1">
+          <div class="bg-content">
+            <h3>Học vấn</h3>
+            <ul class="vm-content-1">
+              <li>
+                <h4 style="color: #686868">Tốt nghiệp THCS</h4>
+                <p><em>08/2020 - 06/2024</em></p>
+                <p>- Tốt nghiệp chương trình THCS</p>
+                <p>- Loại: Giỏi</p>
+              </li>
+              <li>
+                <h4 style="color: #686868">IELTS Academic</h4>
+                <p><em>06/2022-06/2023</em></p>
+                <p>- Hoàn thành khóa học ôn luyện thi IELTS tại PEC</p>
+                <p>
+                  - Band 6.0 (Listening 7.0 Reading 6.5 Writing 5.5 Speaking
+                  5.5)
+                </p>
+              </li>
+            </ul>
+            <i class="ic-pencil"></i>
+            <!-- View more -->
+            <button type="button" class="view-more bg-edu-vm">
+              <i class="icon-down-dir"></i>
+              <p style="display: inline">VIEW MORE</p>
+            </button>
+          </div>
+        </div>
+        <div class="bg-box bg-activity bg-2">
+          <div class="bg-content">
+            <h3>Hoạt động</h3>
+            <i class="ic-toolbox" id="activity-toolbox"></i>
+            <ul class="vm-content-2">
+              <li>
+                <h4 style="color: #686868">
+                  Câu lạc bộ Tin học Bến Cát (C3BC)
+                </h4>
+                <p><em>19/6/2024</em></p>
+                <p>- Thành viên CLB C3BC</p>
+              </li>
+            </ul>
+            <!-- View more -->
+            <button type="button" class="view-more bg-lang-vm">
+              <i class="icon-down-dir"></i>
+              <p style="display: inline">VIEW MORE</p>
+            </button>
+          </div>
+        </div>
+        <div class="bg-box bg-hobby bg-3">
+          <div class="bg-content">
+            <h3>Sở thích</h3>
+            <i class="ic-telescope" id="telescope-container"></i>
+            <div class="vm-content-3">
+              <div class="hobbies-container">
+                <div class="hobby-games">
+                  <i class="ic-strategy"></i>
+                  <p>Chơi game</p>
+                </div>
+                <div class="hobby-shootingpictures">
+                  <i class="ic-telescope" id="hobby-telescope-icon"></i>
+                  <p>Chụp hình</p>
+                </div>
+              </div>
+            </div>
+            <!-- View more -->
+            <button type="button" class="view-more bg-hb-vm">
+              <i class="icon-down-dir"></i>
+              <p style="display: inline">VIEW MORE</p>
+            </button>
+          </div>
+        </div>
+        <div class="bg-box bg-language bg-4">
+          <div class="bg-content">
+            <h3>Ngôn ngữ</h3>
+
+            <i class="ic-mic" id="language-mic-icon"></i>
+            <div class="vm-content-4">
+              <h4>English - IELTS 6.0</h4>
+              <span class="colorbar-1"></span>
+              <span class="colorbar-2"></span>
+              <span class="colorbar-3"></span>
+            </div>
+            <!-- View more -->
+            <button type="button" class="view-more bg-lang-vm">
+              <i class="icon-down-dir"></i>
+              <p style="display: inline">VIEW MORE</p>
+            </button>
+          </div>
+        </div>
+        <div class="bg-box bg-skills bg-5">
+          <div class="bg-content">
+            <h3>Kĩ năng</h3>
+            <i class="ic-tools-2" id="skills-tools-icon"></i>
+            <div class="vm-content-5">
+              <div class="skill-html-css">
+                <h4>HTML/CSS - Fundamental</h4>
+                <span class="htmlcss-colorbar-1"></span>
+                <span class="htmlcss-colorbar-2"></span>
+                <span class="htmlcss-colorbar-3"></span>
+              </div>
+              <div class="skill-python">
+                <h4>Python - Basic</h4>
+                <span class="python-colorbar-1"></span>
+                <span class="python-colorbar-2"></span>
+                <span class="python-colorbar-3"></span>
+              </div>
+              <div class="skill-js">
+                <h4>JavaScript - Fundamental</h4>
+                <span class="js-colorbar-1"></span>
+                <span class="js-colorbar-2"></span>
+                <span class="js-colorbar-3"></span>
+              </div>
+            </div>
+            <!-- View more -->
+            <button type="button" class="view-more bg-skills-vm">
+              <i class="icon-down-dir"></i>
+              <p style="display: inline">VIEW MORE</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Certificates -->
+      <div class="certificate-container" id="certificate">
+        <div class="certificate-content">
+          <h3>Chứng chỉ - Giải thưởng</h3>
+          <div class="certificate-list">
+            <div class="certificate-ielts">
+              <img
+                src="images/ielts-certificate-results.png"
+                alt="IELTS Certificate"
+                width="200"
+                height="100"
+              />
+              <div class="certificate-ielts-text">
+                <h4>Chứng chỉ IELTS 6.0</h4>
+                <p>- Thi tại Hội đồng Anh (British Council)</p>
+                <p>Band: 6.0/9.0</p>
+              </div>
+            </div>
+            <div class="certificate-ioe">
+              <img
+                src="images/ioe_certificate.jpg"
+                alt="IOE Certificate"
+                width="100"
+                height="150"
+              />
+              <div class="certificate-ioe-text">
+                <h4>Chứng nhận kì thi IOE huyện Bàu Bàng</h4>
+                <p>- Giải nhì toàn tỉnh</p>
+                <p>Điểm: 1890/2000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects -->
+      <div class="project" id="project">
+        <div class="project-container">
+          <h3>Dự án</h3>
+          <div class="project-list">
+            <div class="project-minecraft-server">
+              <img
+                src="images/minecraft-server.png"
+                alt="Minecraft Server Minigame Lobby"
+                width="100%"
+                height="300px"
+              />
+              <div class="project-title-1">
+                <h4>
+                  <a href="projectCharter/digital-cv.html" target="_blank"
+                    >Dự án server Minecraft</a
+                  >
+                </h4>
+              </div>
+              <div class="project-info-1">
+                <p class="project-date-1">2022</p>
+                <i class="icon-user"></i>
+                <p>Cá nhân</p>
+                <i class="icon-lamp"></i>
+                <p>Owner</p>
+              </div>
+              <div class="project-desc-1">
+                <p class="desc-1-title">Mô tả</p>
+                <p class="desc-1">
+                  Một máy chủ Minecraft nhỏ chứa nhiều minigame giải trí.
+                </p>
+              </div>
+              <div class="project-mission-1">
+                <p class="mission-title-1">Nhiệm vụ</p>
+                <p class="mission-1">
+                  - Điều hành máy chủ - Mở trang web giới thiệu - Sửa lỗi - Thêm
+                  tính năng - Config plugin
+                </p>
+              </div>
+              <div class="project-technology-1">
+                <p class="tech-1-title">Công nghệ</p>
+                <p class="tech-1">- HTML, CSS</p>
+              </div>
+            </div>
+            <div class="project-personal-cv">
+              <img
+                src="images/project_1.png"
+                alt="Personal CV Website"
+                width="100%"
+                height="300px"
+              />
+              <div class="project-title-1">
+                <h4>
+                  <a href="projectCharter2/digital-cv.html" target="_blank"
+                    >CV Cá nhân</a
+                  >
+                </h4>
+              </div>
+              <div class="project-info-1">
+                <p class="project-date-1">2024</p>
+                <i class="icon-user"></i>
+                <p>FUNiX</p>
+                <i class="icon-lamp"></i>
+                <p>Developer</p>
+              </div>
+              <div class="project-desc-1">
+                <p class="desc-1-title">Mô tả</p>
+                <p class="desc-1">
+                  Trang web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                  như kĩ năng nghề nghiệp.
+                </p>
+              </div>
+              <div class="project-mission-1">
+                <p class="mission-title-1">Nhiệm vụ</p>
+                <p class="mission-1">
+                  - Phát triển code - Review Code - Tối ưu code - Xử lý lỗi
+                </p>
+              </div>
+              <div class="project-technology-1">
+                <p class="tech-1-title">Công nghệ</p>
+                <p class="tech-1">- HTML, CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer (link mxh) -->
+      <footer>
+        <div class="footer-github">
+          <a href="https://github.com/ngyykhoi" target="_blank"
+            ><i class="icon-github-circled"></i
+          ></a>
+          <p style="color: #929298">GitHub</p>
+        </div>
+        <div class="footer-facebook">
+          <a
+            href="https://www.facebook.com/profile.php?id=100087268943494"
+            target="_blank"
+            ><i class="icon-facebook-circled"></i
+          ></a>
+          <p style="color: #929298">Facebook</p>
+        </div>
+      </footer>
+    </div>
+    <script src="email-check.js"></script>
+    <script src="view-more.js"></script>
+  </body>
+</html>
